@@ -1,0 +1,14 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+th{
+    background-color: green;
+}
+tr:nth-child(3), tr:nth-child(7){
+    background-color: rgb(202, 202, 202);
+}
+
+#profilepic{
+    border-radius: 50%;   
+}

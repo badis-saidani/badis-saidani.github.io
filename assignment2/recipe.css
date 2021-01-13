@@ -1,0 +1,54 @@
+h1, h2, h3 
+{
+    color:#A4A400;
+    background: #F0F0F0;
+    font-family: "Lucida Sans Unicode", "Helvetica", "Arial", "sans-serif";
+    text-decoration: underline;
+}
+
+body
+{
+	color: #404040;
+	font-family: "Georgia" , "Garamond", "serif";
+    }
+    
+#main
+{
+     text-align: center;
+}
+
+
+a
+{
+    color:#A4A400; 
+    text-decoration: none underline;
+}
+
+abbr { 
+    text-decoration: underline;
+}
+
+.recipeinfo, .links
+{
+	list-style-type: none;
+    padding: 0em;
+}
+
+#directions > li > ul
+{
+	list-style-type: circle;
+}
+
+blockquote
+{
+background: #FFFFA8 ;
+font-style: italic;
+}
+
+#copyright:nth-last-child()
+{
+    font-family: monospace;
+    text-align: justify; /* For Edge */
+  -moz-text-align-last: right; /* For Firefox prior 58.0 */
+  text-align-last: right;
+}
