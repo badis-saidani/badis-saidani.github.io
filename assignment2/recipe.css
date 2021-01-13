@@ -1,16 +1,26 @@
+/*
+    Name: Badis Saidani
+    ID: 611950
+    Description of the file: The file contains all the elements that fulfill the requirement 
+    of assignment2 and the extra credit, like changing the background image, 
+    black circle bullets to pie images and letter-spacing of the headings.
+*/
 h1, h2, h3 
 {
     color:#A4A400;
     background: #F0F0F0;
     font-family: "Lucida Sans Unicode", "Helvetica", "Arial", "sans-serif";
     text-decoration: underline;
+    letter-spacing: 0.25em;
+
 }
 
 body
 {
 	color: #404040;
-	font-family: "Georgia" , "Garamond", "serif";
-    }
+    font-family: "Georgia" , "Garamond", "serif";
+    background-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg");
+}
     
 #main
 {
@@ -28,6 +38,9 @@ abbr {
     text-decoration: underline;
 }
 
+#ingerdients{
+    list-style-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif");
+}
 .recipeinfo, .links
 {
 	list-style-type: none;
