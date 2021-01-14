@@ -1,0 +1,64 @@
+body{
+    background: url("images/background.gif") repeat;
+    color: rgb(58, 130, 143);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#container{
+    /*width: 80%;
+    margin: auto;
+    padding-top: 5px;*/
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#boxes{
+    border: 10px  solid white;
+    background-color: white;
+}
+
+span{
+    border-bottom: 2px  dashed blue;
+}
+
+
+article{
+    border: 4px  solid #C2E9E9 ;   
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #E8FBFB;
+    
+    
+}
+article.content{
+    margin-left: 230px;
+}
+article.friends{
+    width: 200px;
+    float: left;
+
+    border: 4px  solid #0c7ca8 ;
+    background-color: #a1e2eb;
+    margin-top: 0px;
+    
+}
+
+
+#header{
+    background-color: #A8F0F0;
+    text-align:  right ;
+}
+
+#header h2{
+    font-size: 14pt;
+}
+#header h1{
+    font-size: 24pt;
+}
+
+article img{
+    float: right;
+    padding-left: 2px;
+}
+.clearfix{
+    overflow: auto;
+}
