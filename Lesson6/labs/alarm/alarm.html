@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+</html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+	<title>Alarm</title>
+	<link href="./alarm.css" type="text/css" rel="stylesheet">
+</head>
+
+
+<body>
+	<h1>
+		<img id="logo" src="./timer.gif" width="150px" height="150px" alt="UW CSE logo">
+		Timer Alarm
+	</h1>
+
+	<div>
+		<input id="min" type="text" value=""> min
+	</div>
+
+	<div>
+		<input id="sec" type="text" value=""> sec
+	</div>
+
+	<div>
+		<button id="go">Go</button>
+	</div>
+
+	<script>
+		/*
+for (let i = min; i > 0; i--) {
+					for (let j = 0; index < array.length; index++) {
+						const element = array[index];
+						
+					}
+
+		*/
+		
+		let goButton = document.getElementById('go');
+
+		
+		//document.getElementById("sec").value = ""+155;
+		
+
+		goButton.onclick = alarmOn;
+
+		function alarmOn() {
+			let minElem = document.getElementById('min');
+			let secElem = document.getElementById('sec');
+
+			let min = Number(minElem.value);
+			let sec = Number(secElem.value);
+			let timeMS = (min*60+sec);
+			console.log('ms ' ,timeMS);
+
+			console.log(min,' ',sec);
+			let timerId = setInterval(() => {
+				console.log('inside timer');
+			if (sec == 0 && min == 0) {
+				document.body.style.background = "red";
+				clearInterval(timerId);
+			}
+			else {
+				if(sec>0) {
+					
+					sec--;
+					
+					console.log(sec,' s');
+				document.getElementById("sec").value = ""+sec;
+
+					
+				}
+				if(min>0 && sec==0){
+					min--;
+					sec = 60;
+
+					minElem.value= ""+min;
+					secElem.value = ""+sec;
+
+				}
+				
+					
+				}
+			
+			}, 1000);
+		}
+		
+	</script>
+
+</body>
+
+</html>
