@@ -1,0 +1,67 @@
+1. 'Pete'
+2. 'Pete'
+3. 0 
+   1
+
+4. function sum(a) {
+    return function(b) {
+     return a + b; 
+    };
+
+}
+
+5. function inBetween(a, b) {
+  return function(x) {
+    return x >= a && x <= b;
+  };
+}
+
+function inArray(arr) {
+  return function(x) {
+    return arr.includes(x);
+  };
+}
+
+6. function byField(field) {
+  return (a, b) => a[field] > b[field] ? 1 : -1;
+}
+
+7. let i = 0;
+  while (i < 10) {
+    let shooter = function() {
+      alert( i );
+    };
+    shooters.push(shooter);
+    i++;
+  }
+
+8. let calculator = {
+  sum() {
+    return this.a + this.b;
+  },
+
+  mul() {
+    return this.a * this.b;
+  },
+
+  read() {
+    this.a = +prompt('a?', 0);
+    this.b = +prompt('b?', 0);
+  }
+};
+
+9. let ladder = {
+  step: 0,
+  up() {
+    this.step++;
+    return this;
+  },
+  down() {
+    this.step--;
+    return this;
+  },
+  showStep() {
+    alert( this.step );
+    return this;
+  }
+}
