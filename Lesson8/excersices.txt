@@ -1,0 +1,42 @@
+//1
+true 
+null
+undefind
+//2
+rabbit
+//3
+let hamster = {
+  stomach: [],
+
+  eat(food) {
+    this.stomach = [food];
+  }
+};
+
+let speedy = {
+  __proto__: hamster
+};
+
+let lazy = {
+  __proto__: hamster
+};
+
+
+speedy.eat("apple");
+console.log( speedy.stomach ); // [ 'apple' ]
+console.log( lazy.stomach ); // []
+
+//4
+1. true
+2. false
+3. true
+4. undefind
+
+//5
+function Obj(name) {
+  this.name = name;
+}
+
+let obj = new Obj('Badis');
+let obj2 = new obj.constructor('Bad');
+console.log( obj2.name );
