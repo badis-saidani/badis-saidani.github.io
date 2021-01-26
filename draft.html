@@ -1,0 +1,12 @@
+<body>
+<div>
+<p> Events are <em>crazy</em>! </p>
+</div>
+</body>
+<script>
+document.querySelectorAll("body, div, p, em").forEach(e => e.onclick = hello);
+//document.querySelectorAll("em, p, div, body ").forEach(e => e.onclick = hello);
+function hello() {
+alert("You clicked on the " + this.nodeName);
+}
+</script>

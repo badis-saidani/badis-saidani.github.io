@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog</title>
+        <script src="blog.js"></script>
+    </head>
+    <body>
+        <input type="number" id="userId" />
+        <button id="showUser">Show user info</button>
+        <button id="showPosts">Show user posts</button>
+        <div id="output">
+            
+        </div>
+        <script>
+            var baseUrl = 'http://jsonplaceholder.typicode.com/';
+            function showComment(id){
+                document.querySelector('#output').innerHTML = ""; 
+                if (!id) return;
+                fetch(baseUrl+'comments?postId='+id)
+                .then(res=>res.json())
+                .then(data=>{
+                    var p = document.createElement('p');
+                    data.forEach(c=>{
+                        
+                        p.innerHTML += c.body+'</br>';
+                        
+                    })
+                    document.querySelector('#output').appendChild(p); 
+                    
+                });
+            }
+        </script>
+        
+    </body>
+</html>
