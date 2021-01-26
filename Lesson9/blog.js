@@ -1,7 +1,7 @@
 
 window.onload = blog
 function blog(){
-    var baseUrl = 'http://jsonplaceholder.typicode.com/';
+    var baseUrl = 'https://jsonplaceholder.typicode.com/';
             let btnShowUser = document.getElementById("showUser");
             var btnShowPosts = document.getElementById('showPosts');
             var userId = document.getElementById('userId');
