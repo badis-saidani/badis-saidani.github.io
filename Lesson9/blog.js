@@ -1,13 +1,16 @@
 
-window.onload = blog
-function blog(){
+//window.onload = blog
+(function (){
     
-            let btnShowUser = document.getElementById("showUser");
+            
+            window.onload = function(){
+                let btnShowUser = document.getElementById("showUser");
             var btnShowPosts = document.getElementById('showPosts');
             var userId = document.getElementById('userId');
-
-            btnShowUser.addEventListener('click', showUser);
-            btnShowPosts.addEventListener('click', showPosts);
+                btnShowUser.addEventListener('click', showUser);
+                btnShowPosts.addEventListener('click', showPosts);
+            }
+            
             
             function showUser(){
                 document.querySelector('#output').innerHTML = ""; 
@@ -60,4 +63,4 @@ function blog(){
 
             
     
-}
+})();
